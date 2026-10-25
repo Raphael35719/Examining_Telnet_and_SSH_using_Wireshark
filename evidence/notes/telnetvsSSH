@@ -1,0 +1,20 @@
+Telnet vs SSH: Practical Lab Questions and Answers
+1. What information was visible when you followed the Telnet TCP stream?
+
+The Telnet TCP stream displayed readable information, including the username, password, commands entered, and some of the files or resources accessed during the session.
+
+2. What changed when you followed the SSH TCP stream?
+
+Unlike Telnet, SSH displayed encrypted data that was not directly human-readable. The login credentials, commands, and application data were protected by encryption.
+
+3. Why is sending authentication information over an unencrypted session dangerous?
+
+Attackers monitoring the network may capture usernames and passwords and use them to gain unauthorized access to systems, applications, or sensitive information.
+
+4. What security property does SSH provide that Telnet does not?
+
+SSH provides encryption, which protects transmitted data from being easily read by unauthorized parties. SSH also provides server authentication and integrity protection, which Telnet does not provide by default.
+
+5. Why should packet captures containing credentials never be uploaded to a public GitHub repository?
+
+Public packet captures may expose usernames, passwords, and other sensitive information, allowing unauthorized users to compromise accounts or systems. Therefore, captures must be reviewed and sanitized before publication.

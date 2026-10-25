@@ -1,0 +1,33 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python / tooling, if used
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+tmp/
+temp/
+
+# Captures are ignored by default to avoid publishing sensitive traffic.
+# Force-add only reviewed, sanitized files when appropriate.
+evidence/captures/*
+!evidence/captures/README.md
+
+# Secrets and private keys
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
